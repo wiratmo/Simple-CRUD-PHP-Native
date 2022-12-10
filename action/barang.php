@@ -12,7 +12,7 @@ if(isset($_POST['tambah'])){
     if(mysqli_num_rows($exec_qcke)>0){
         header('Location: ../barang.php?status=denger&msg=Kode Barang telah dipakai');
     } else {
-        $query_add_barang = "INSERT INTO barang(kode, nama, stokAwal, harga) VALUE ('$kode', '$nama', '$stokAwal', '$harga')";
+        $query_add_barang = "INSERT INTO barang(kode, nama, stokAwal, harga, stokAkhir) VALUE ('$kode', '$nama', '$stokAwal', '$harga', '$stokAwal')";
         $exec_ab = mysqli_query($conn, $query_add_barang);
         header('Location: ../barangList.php?status=success&msg=Barang '.$nama.' Berhasil ditambahkan');
     }

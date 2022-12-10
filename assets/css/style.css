@@ -32755,6 +32755,9 @@ div.tagsinput span.tag a {
 }
 
 .main-panel {
+  background: url(../images/abstract-blur-supermarket.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   transition: width 0.25s ease, margin 0.25s ease;
   width: calc(100% - 235px);
   min-height: calc(100vh - 60px);

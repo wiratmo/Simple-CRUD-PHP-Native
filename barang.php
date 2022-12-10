@@ -102,9 +102,9 @@ $harga = isset($data['harga'])?($data['harga']):'';
                       if($_GET['option'] == 'edit'){
                         echo '<input type="hidden" name="id" value="'.$id.'">';
                         echo '<button name="update" value="'.$id.'" type="submit" class="btn btn-primary mr-2">Update</button>';
-                      } else {
-                        echo '<button name="tambah" type="submit" class="btn btn-primary mr-2">Tambah</button>';
-                      }
+                      } 
+                    }else {
+                      echo '<button name="tambah" type="submit" class="btn btn-primary mr-2">Tambah</button>';
                     }
                     ?>
                     

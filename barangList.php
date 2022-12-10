@@ -37,7 +37,7 @@ if (empty($_GET['cari'])) {
                   <div class="card-description">
                     <p>Pada halaman ini anda bisa <code> menambahkan, mengedit, menghapus dan mencari barang </code></p>
                     <div class="float-right btn-plus">
-                      <a href="barangAdd.php">
+                      <a href="barang.php">
                         <button class="btn btn-success"><i class="mdi mdi-plus-circle"></i> Tambah Barang</button>
                       </a>
                     </div>
