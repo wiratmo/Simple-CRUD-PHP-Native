@@ -1,6 +1,6 @@
 <?php
 require_once '../component/notification.php';
-require_once 'db_connection.php';
+require_one 'db_connection.php';
 session_start();
 
 if(isset($_POST['login'])){
@@ -15,7 +15,7 @@ if(isset($_POST['login'])){
             header('Location: ../index.php?status=error&msg=Username yang anda masukkan belum terdaftar');
         } else {
             $user = mysqli_fetch_assoc($exec_qcue);
-            $query_check_username_password = "SELECT id, username FROM user where username = '$username' and password = md5('$password')";
+            $query_check_username_password = "SELECT id, username FROM user where username = '$username' and password = md5('$password)";
             $exec_cup = mysqli_query($conn, $query_check_username_password);
             $data = mysqli_fetch_assoc($exec_cup);
             if(isset($data)){

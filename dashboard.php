@@ -2,8 +2,8 @@
 
 require_once 'component/header/tJ8kbc9JGm7h.php'; 
 session_start();
-if (empty($_SESSION['id'])){
-  header('Location: index.php?status=warning&msg=Silakan masuk menggunakan username dan password');
+if (isset($_SESSION['id'])){
+  header('Location: index.php?status=warning&msg=Silakan masuk menggunakan username dan password')
 }
 ?>
 

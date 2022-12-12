@@ -93,7 +93,7 @@ if (empty($_GET['cari'])) {
                                 <a href="barang.php?option=edit&id=<?=$d['id']?>"><label class="btn btn-sm btn-warning"><i class="mdi mdi-pen"></i></label></a>
                                 <form action="action/barang.php" method="POST">
                                   <input type="hidden" name="id" value="<?= $d['id']?>">
-                                  <button type="submit" name="hapus" class="btn btn-sm btn-danger"><i class="mdi mdi-delete"></i></button>
+                                  <button type="submit" name="hapus" class="btn btn-sm btn-danger" onclick="return confirm('yakin mau menghapus ?')"><i class="mdi mdi-delete"></i></button>
                                 </form>
                                 </div>
                               </td>

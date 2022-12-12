@@ -20,6 +20,9 @@
                 WarungMU
               </div>
               <h4>Hello! dude, <b>Happy</b> Shopping.</h4>
+                <code><h4>Akun default:</h4></code>
+                <code>Username : kasir</code>
+                <code>Password : kasir</code>
               <div class="notify">
                 <?php
                 if (isset($_GET['msg'])) {
@@ -37,6 +40,7 @@
                 <div class="mt-3">
                   <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" name='login' type="submit">SIGN IN</button>
                 </div>
+
               </form>
             </div>
           </div>

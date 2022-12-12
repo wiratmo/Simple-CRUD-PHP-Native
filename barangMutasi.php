@@ -71,8 +71,8 @@ $exec_qsad = mysqli_query($conn, $query_show_all_data);
                               <td><?=$no+=1?></td>
                               <td><?= $d['kode'] ?></td>
                               <td><?= $d['nama'] ?></td>
-                              <td><?= $d['stokAwal'] ?></td>
-                              <td><?= $d['mutasiMasuk'] ?></td>
+                              <td><?= $d['stok'] ?></td>
+                              <td><?= $d['mutasi'] ?></td>
                               <td><?= $d['mutasiKeluar'] ?></td>
                               <td><?= $d['stokAwal'] + ($d['mutasiMasuk'] - $d['mutasiKeluar']) ?></td>
                               <td class="ctable">
